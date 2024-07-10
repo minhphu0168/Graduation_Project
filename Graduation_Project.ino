@@ -135,6 +135,7 @@ void printDTCs()
   if (numOfDTCs == 0)
   {
     Serial.println("No DTCs.");
+
     sDTCs[0] = empty_String;
     sDTCs[1] = empty_String;
     sDTCs[2] = "No DTC";
@@ -142,8 +143,6 @@ void printDTCs()
     sDTCs[4] = empty_String;
     sDTCs[5] = empty_String;
   }
-    
-
   else
   {
     Serial.print("The engine has ");
@@ -202,7 +201,6 @@ void setup()
   Serial.println("CAN init ok!");
   set_mask_filter();
 }
-
 
 void loop()
 {
